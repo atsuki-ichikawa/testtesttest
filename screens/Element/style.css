@@ -1,0 +1,931 @@
+.element {
+  background-color: #fffffe;
+  height: 6624px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.element .overlap {
+  background-color: #d8eefe;
+  height: 540px;
+  left: 0;
+  position: absolute;
+  top: 2535px;
+  width: 1440px;
+}
+
+.element .overlap-group {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 350px;
+  left: 278px;
+  position: absolute;
+  top: 127px;
+  width: 883px;
+}
+
+.element .group-2 {
+  height: 250px;
+  left: 98px;
+  position: relative;
+  top: 50px;
+  width: 690px;
+}
+
+.element .text-wrapper-5 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 266px;
+  letter-spacing: 6px;
+  line-height: 30px;
+  position: absolute;
+  top: 50px;
+  width: 422px;
+}
+
+.element .rectangle-2 {
+  background-color: #d9d9d9;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.element .text-wrapper-6 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 652px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 64px;
+}
+
+.element .overlap-2 {
+  background-color: #a3a3a3;
+  border-radius: 30px 0px 0px 30px;
+  height: 700px;
+  left: 42px;
+  position: absolute;
+  top: 129px;
+  width: 1355px;
+}
+
+.element .lab {
+  height: 700px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1355px;
+}
+
+.element .text-wrapper-7 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 864px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 205px;
+}
+
+.element .text-wrapper-8 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 771px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 439px;
+}
+
+.element .text-wrapper-9 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 82px;
+  font-weight: 400;
+  left: 615px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 311px;
+}
+
+.element .img {
+  height: 450px;
+  left: -15388px;
+  object-fit: cover;
+  position: absolute;
+  top: 2821px;
+  width: 450px;
+}
+
+.element .text-wrapper-10 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 48px;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 933px;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-11 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 48px;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1723px;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-12 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 48px;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2445px;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-13 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 636px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3147px;
+}
+
+.element .text-wrapper-14 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 648px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3999px;
+}
+
+.element .text-wrapper-15 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 600;
+  height: 48px;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 4918px;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-16 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5006px;
+}
+
+.element .text-wrapper-17 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5305px;
+}
+
+.element .text-wrapper-18 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  height: 39px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5604px;
+}
+
+.element .text-wrapper-19 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  height: 58px;
+  left: 85px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 6075px;
+}
+
+.element .text-wrapper-20 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 24px;
+  left: 550px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 6213px;
+  white-space: nowrap;
+}
+
+.element .flexcontainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  height: 268px;
+  left: 170px;
+  position: absolute;
+  top: 1029px;
+  width: 1100px;
+}
+
+.element .text {
+  align-self: stretch;
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  line-height: 30px;
+  position: relative;
+}
+
+.element .span {
+  letter-spacing: 0.9px;
+}
+
+.element .seven-card {
+  left: 170px !important;
+  position: absolute !important;
+  top: 3256px !important;
+}
+
+.element .element-card-instance {
+  background-image: url(../../../static/img/graphic.svg) !important;
+}
+
+.element .design-component-instance-node {
+  color: #094067 !important;
+}
+
+.element .seven-card-instance {
+  left: 170px !important;
+  position: absolute !important;
+  top: 4108px !important;
+}
+
+.element .element-card-2 {
+  background-image: url(../../../static/img/graphic-1.svg) !important;
+}
+
+.element .element-card-3 {
+  left: 170px !important;
+  position: absolute !important;
+  top: 3621px !important;
+}
+
+.element .element-card-4 {
+  background-image: url(../../../static/img/graphic-2.svg) !important;
+}
+
+.element .element-card-5 {
+  left: 170px !important;
+  position: absolute !important;
+  top: 4473px !important;
+}
+
+.element .element-card-6 {
+  background-image: url(../../../static/img/graphic-3.svg) !important;
+}
+
+.element .element-card-7 {
+  left: 1070px !important;
+  position: absolute !important;
+  top: 3256px !important;
+}
+
+.element .element-card-8 {
+  background-image: url(../../../static/img/graphic-4.svg) !important;
+}
+
+.element .element-card-9 {
+  left: 1070px !important;
+  position: absolute !important;
+  top: 4108px !important;
+}
+
+.element .element-card-10 {
+  background-image: url(../../../static/img/graphic-5.svg) !important;
+}
+
+.element .element-card-11 {
+  left: 1070px !important;
+  position: absolute !important;
+  top: 3621px !important;
+}
+
+.element .element-card-12 {
+  background-image: url(../../../static/img/graphic-6.svg) !important;
+}
+
+.element .element-card-13 {
+  left: 1070px !important;
+  position: absolute !important;
+  top: 4473px !important;
+}
+
+.element .element-card-14 {
+  background-image: url(../../../static/img/graphic-7.svg) !important;
+}
+
+.element .element-card-15 {
+  left: 470px !important;
+  position: absolute !important;
+  top: 3256px !important;
+}
+
+.element .element-card-16 {
+  background-image: url(../../../static/img/graphic-8.svg) !important;
+}
+
+.element .element-card-17 {
+  left: 470px !important;
+  position: absolute !important;
+  top: 4108px !important;
+}
+
+.element .element-card-18 {
+  background-image: url(../../../static/img/graphic-9.svg) !important;
+}
+
+.element .element-card-19 {
+  left: 470px !important;
+  position: absolute !important;
+  top: 3621px !important;
+}
+
+.element .element-card-20 {
+  background-image: url(../../../static/img/graphic-10.svg) !important;
+}
+
+.element .element-card-21 {
+  left: 470px !important;
+  position: absolute !important;
+  top: 4473px !important;
+}
+
+.element .element-card-22 {
+  background-image: url(../../../static/img/graphic-11.svg) !important;
+}
+
+.element .element-card-23 {
+  left: 770px !important;
+  position: absolute !important;
+  top: 3256px !important;
+}
+
+.element .element-card-24 {
+  background-image: url(../../../static/img/graphic-12.svg) !important;
+}
+
+.element .element-card-25 {
+  left: 770px !important;
+  position: absolute !important;
+  top: 4108px !important;
+}
+
+.element .element-card-26 {
+  background-image: url(../../../static/img/graphic-13.svg) !important;
+}
+
+.element .element-card-27 {
+  left: 770px !important;
+  position: absolute !important;
+  top: 3621px !important;
+}
+
+.element .element-card-28 {
+  background-image: url(../../../static/img/graphic-14.svg) !important;
+}
+
+.element .element-card-29 {
+  left: 770px !important;
+  position: absolute !important;
+  top: 4473px !important;
+}
+
+.element .element-card-30 {
+  background-image: url(../../../static/img/graphic-15.svg) !important;
+}
+
+.element .overlap-3 {
+  height: 68px;
+  left: 133px;
+  position: absolute;
+  top: 45px;
+  width: 1141px;
+}
+
+.element .group-3 {
+  height: 68px;
+  left: 33px;
+  position: absolute;
+  top: 0;
+  width: 1108px;
+}
+
+.element .rectangle-3 {
+  background-color: #d9d9d9;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  width: 100px;
+}
+
+.element .group-wrapper {
+  background-color: #094067;
+  border-radius: 50px;
+  height: 40px;
+  left: 670px;
+  position: absolute;
+  top: 1537px;
+  width: 150px;
+}
+
+.element .group-4 {
+  height: 16px;
+  left: 30px;
+  position: relative;
+  top: 12px;
+  width: 95px;
+}
+
+.element .text-wrapper-21 {
+  color: #fffffe;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 100;
+  height: 16px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.element .overlap-group-wrapper {
+  height: 10px;
+  left: 81px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+.element .overlap-group-2 {
+  height: 16px;
+  position: relative;
+  top: -6px;
+  width: 15px;
+}
+
+.element .line-2 {
+  height: 7px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-45deg);
+  width: 7px;
+}
+
+.element .line-3 {
+  height: 7px;
+  left: 6px;
+  position: absolute;
+  top: 7px;
+  transform: rotate(-45deg);
+  width: 7px;
+}
+
+.element .div-wrapper {
+  background-color: #094067;
+  border-radius: 50px;
+  height: 40px;
+  left: 664px;
+  position: absolute;
+  top: 2235px;
+  width: 150px;
+}
+
+.element .group-5 {
+  height: 16px;
+  left: 28px;
+  position: relative;
+  top: 12px;
+  width: 95px;
+}
+
+.element .news-instance {
+  left: 170px !important;
+  position: absolute !important;
+  top: 1846px !important;
+}
+
+.element .news-2 {
+  color: #5f6c7b !important;
+}
+
+.element .news-3 {
+  left: 550px !important;
+  position: absolute !important;
+  top: 1846px !important;
+}
+
+.element .news-4 {
+  left: 930px !important;
+  position: absolute !important;
+  top: 1846px !important;
+}
+
+.element .lorem-ipsum-dolor {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5085px;
+  width: 1100px;
+}
+
+.element .p {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5384px;
+  width: 1100px;
+}
+
+.element .lorem-ipsum-dolor-2 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5683px;
+  width: 1100px;
+}
+
+.element .lorem-ipsum-dolor-3 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5172px;
+  width: 1100px;
+}
+
+.element .lorem-ipsum-dolor-4 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5471px;
+  width: 1100px;
+}
+
+.element .lorem-ipsum-dolor-5 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 48px;
+  left: 170px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5770px;
+  width: 1100px;
+}
+
+.element .line-4 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5055px;
+  width: 1100px;
+}
+
+.element .line-5 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5354px;
+  width: 1100px;
+}
+
+.element .line-6 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5653px;
+  width: 1100px;
+}
+
+.element .line-7 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5153px;
+  width: 1101px;
+}
+
+.element .line-8 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5452px;
+  width: 1101px;
+}
+
+.element .line-9 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5751px;
+  width: 1101px;
+}
+
+.element .line-10 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5243px;
+  width: 1101px;
+}
+
+.element .line-11 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5542px;
+  width: 1101px;
+}
+
+.element .line-12 {
+  height: 1px;
+  left: 170px;
+  position: absolute;
+  top: 5841px;
+  width: 1101px;
+}
+
+.element .group-6 {
+  background-color: #094067;
+  border-radius: 50px;
+  height: 40px;
+  left: 645px;
+  position: absolute;
+  top: 5930px;
+  width: 150px;
+}
+
+.element .group-7 {
+  height: 16px;
+  left: 40px;
+  position: relative;
+  top: 12px;
+  width: 77px;
+}
+
+.element .group-8 {
+  height: 10px;
+  left: 63px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(45deg);
+  width: 10px;
+}
+
+.element .overlap-wrapper {
+  height: 288px;
+  left: 0;
+  position: absolute;
+  top: 6336px;
+  width: 1444px;
+}
+
+.element .overlap-4 {
+  background-color: #d8eefe;
+  height: 288px;
+  position: relative;
+  width: 1440px;
+}
+
+.element .text-wrapper-22 {
+  color: #094067;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  height: 30px;
+  left: 560px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 46px;
+  white-space: nowrap;
+}
+
+.element .group-9 {
+  height: 18px;
+  left: 479px;
+  position: absolute;
+  top: 108px;
+  width: 492px;
+}
+
+.element .text-wrapper-23 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 17px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.element .text-wrapper-24 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 17px;
+  left: 77px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.element .text-wrapper-25 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 17px;
+  left: 162px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.element .text-wrapper-26 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 17px;
+  left: 260px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.element .text-wrapper-27 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 17px;
+  left: 414px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1px;
+}
+
+.element .ellipse {
+  background-color: #777777;
+  border-radius: 20px;
+  height: 40px;
+  left: 631px;
+  position: absolute;
+  top: 169px;
+  width: 40px;
+}
+
+.element .ellipse-2 {
+  background-color: #777777;
+  border-radius: 20px;
+  height: 40px;
+  left: 700px;
+  position: absolute;
+  top: 169px;
+  width: 40px;
+}
+
+.element .ellipse-3 {
+  background-color: #777777;
+  border-radius: 20px;
+  height: 40px;
+  left: 769px;
+  position: absolute;
+  top: 169px;
+  width: 40px;
+}
+
+.element .text-wrapper-28 {
+  color: #5f6c7b;
+  font-family: "Inter", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  height: 15px;
+  left: 626px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 259px;
+}

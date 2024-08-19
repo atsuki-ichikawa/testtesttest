@@ -1,0 +1,78 @@
+.element-card {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  width: 200px;
+}
+
+.element-card .graphic {
+  background-color: #7d7d7d;
+  background-image: url(../../../static/img/graphic-16.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+
+.element-card .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  left: 16px;
+  letter-spacing: -1.28px;
+  line-height: 32px;
+  position: absolute;
+  top: 15px;
+  width: 200px;
+}
+
+.element-card .copy {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.element-card .div {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.element-card .text-wrapper-2 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: stretch;
+  color: #5f6c7b;
+  display: -webkit-box;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+}
