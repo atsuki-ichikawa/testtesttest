@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>1&period; &ast;&ast;Set Up Image Upload in Next&period;js&colon;&ast;&ast;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <p>To enable image input in your Next.js chatbot using a multimodal API, you'll need to handle both the image upload and the interaction with the API that can process images. Here's a general approach:</p>
+<h3 id="1-set-up-image-upload-in-nextjs">1. <strong>Set Up Image Upload in Next.js:</strong></h3>
+<p>You can use an input element to allow users to upload images. Here's an example:</p>
+<pre><code class="language-jsx"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">ChatBot</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [selectedImage, setSelectedImage] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleImageUpload</span> = (<span class="hljs-params">event</span>) =&gt; {
+    <span class="hljs-title function_">setSelectedImage</span>(event.<span class="hljs-property">target</span>.<span class="hljs-property">files</span>[<span class="hljs-number">0</span>]);
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleSubmit</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-keyword">if</span> (selectedImage) {
+      <span class="hljs-keyword">const</span> formData = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormData</span>();
+      formData.<span class="hljs-title function_">append</span>(<span class="hljs-string">&#x27;image&#x27;</span>, selectedImage);
+
+      <span class="hljs-comment">// Example of sending the image to your API</span>
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/your-endpoint&#x27;</span>, {
+        <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+        <span class="hljs-attr">body</span>: formData,
+      });
+
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(result);
+    }
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;file&quot;</span> <span class="hljs-attr">accept</span>=<span class="hljs-string">&quot;image/*&quot;</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleImageUpload}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>Send Image<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="2-handling-the-image-on-the-server-side">2. <strong>Handling the Image on the Server Side:</strong></h3>
+<p>In your Next.js API route, you can handle the uploaded image and pass it to your multimodal API. Here’s a simplified example:</p>
+<pre><code class="language-jsx"><span class="hljs-keyword">import</span> formidable <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;formidable&#x27;</span>;
+<span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> config = {
+  <span class="hljs-attr">api</span>: {
+    <span class="hljs-attr">bodyParser</span>: <span class="hljs-literal">false</span>,
+  },
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">async</span> (req, res) =&gt; {
+  <span class="hljs-keyword">const</span> form = <span class="hljs-keyword">new</span> formidable.<span class="hljs-title class_">IncomingForm</span>();
+
+  form.<span class="hljs-title function_">parse</span>(req, <span class="hljs-function">(<span class="hljs-params">err, fields, files</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (err) {
+      res.<span class="hljs-title function_">status</span>(<span class="hljs-number">500</span>).<span class="hljs-title function_">json</span>({ <span class="hljs-attr">error</span>: <span class="hljs-string">&#x27;Error parsing file&#x27;</span> });
+      <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">const</span> filePath = files.<span class="hljs-property">image</span>.<span class="hljs-property">filepath</span>;
+
+    <span class="hljs-comment">// Now you can send the file to your multimodal API</span>
+    <span class="hljs-keyword">const</span> result = <span class="hljs-title function_">yourMultimodalApiCall</span>(filePath);
+
+    res.<span class="hljs-title function_">status</span>(<span class="hljs-number">200</span>).<span class="hljs-title function_">json</span>(result);
+  });
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">yourMultimodalApiCall</span> = (<span class="hljs-params">filePath</span>) =&gt; {
+  <span class="hljs-comment">// Implement the API call logic here</span>
+  <span class="hljs-comment">// For example, using `fetch` to send the image to your API endpoint</span>
+
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">message</span>: <span class="hljs-string">&#x27;API call result&#x27;</span> };
+};
+</code></pre>
+<h3 id="3-connecting-with-the-multimodal-api">3. <strong>Connecting with the Multimodal API:</strong></h3>
+<p>Once you have the image uploaded, you can integrate it with the multimodal API you're using. If your API accepts images, make sure you format the request accordingly (e.g., as a <code>multipart/form-data</code> POST request).</p>
+<h3 id="4-handling-api-response">4. <strong>Handling API Response:</strong></h3>
+<p>Finally, handle the API response and update your chatbot interface accordingly to show the result of the image processing.</p>
+<h3 id="considerations">Considerations:</h3>
+<ul>
+<li><strong>Error Handling:</strong> Ensure that you handle errors gracefully, especially for file uploads and API requests.</li>
+<li><strong>Security:</strong> Be cautious with file handling to avoid security vulnerabilities. Ensure you sanitize inputs and manage file uploads securely.</li>
+</ul>
+<p>This setup should allow you to build a chatbot that can handle image inputs via a multimodal API.</p>
+
+            
+            
+        </body>
+        </html>

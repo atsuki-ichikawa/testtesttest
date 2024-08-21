@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Example&colon; &quot;Back to Top&quot; Button</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <p>To keep a component like a &quot;Back to Top&quot; button or a settings button always visible and out of the way on a webpage, you can use CSS to position it in a fixed spot on the screen. Here’s how you can do it:</p>
+<h3 id="example-back-to-top-button">Example: &quot;Back to Top&quot; Button</h3>
+<h4 id="1-htmljsx-component">1. <strong>HTML/JSX Component:</strong></h4>
+<pre><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">BackToTopButton</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">scrollToTop</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">scrollTo</span>({ <span class="hljs-attr">top</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">behavior</span>: <span class="hljs-string">&#x27;smooth&#x27;</span> });
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> 
+      <span class="hljs-attr">onClick</span>=<span class="hljs-string">{scrollToTop}</span> 
+      <span class="hljs-attr">style</span>=<span class="hljs-string">{buttonStyle}</span>
+    &gt;</span>
+      ↑ Back to Top
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">const</span> buttonStyle = {
+  <span class="hljs-attr">position</span>: <span class="hljs-string">&#x27;fixed&#x27;</span>,
+  <span class="hljs-attr">bottom</span>: <span class="hljs-string">&#x27;20px&#x27;</span>,
+  <span class="hljs-attr">right</span>: <span class="hljs-string">&#x27;20px&#x27;</span>,
+  <span class="hljs-attr">padding</span>: <span class="hljs-string">&#x27;10px 15px&#x27;</span>,
+  <span class="hljs-attr">fontSize</span>: <span class="hljs-string">&#x27;14px&#x27;</span>,
+  <span class="hljs-attr">backgroundColor</span>: <span class="hljs-string">&#x27;#007bff&#x27;</span>,
+  <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;#fff&#x27;</span>,
+  <span class="hljs-attr">border</span>: <span class="hljs-string">&#x27;none&#x27;</span>,
+  <span class="hljs-attr">borderRadius</span>: <span class="hljs-string">&#x27;5px&#x27;</span>,
+  <span class="hljs-attr">cursor</span>: <span class="hljs-string">&#x27;pointer&#x27;</span>,
+  <span class="hljs-attr">zIndex</span>: <span class="hljs-number">1000</span>, <span class="hljs-comment">// Ensures it stays on top of other elements</span>
+};
+</code></pre>
+<h4 id="2-css-styling">2. <strong>CSS Styling:</strong></h4>
+<p>The key here is the <code>position: fixed;</code> CSS property. This keeps the button in a fixed spot on the screen, regardless of scrolling. In this example, the button is placed at the bottom-right corner of the page.</p>
+<h3 id="example-settings-button">Example: Settings Button</h3>
+<p>You can place a settings button at the top-right corner of the page, for example:</p>
+<pre><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">SettingsButton</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">openSettings</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-comment">// Logic to open the settings panel</span>
+    <span class="hljs-title function_">alert</span>(<span class="hljs-string">&quot;Settings Panel Opened&quot;</span>);
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> 
+      <span class="hljs-attr">onClick</span>=<span class="hljs-string">{openSettings}</span> 
+      <span class="hljs-attr">style</span>=<span class="hljs-string">{settingsButtonStyle}</span>
+    &gt;</span>
+      ⚙️ Settings
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">const</span> settingsButtonStyle = {
+  <span class="hljs-attr">position</span>: <span class="hljs-string">&#x27;fixed&#x27;</span>,
+  <span class="hljs-attr">top</span>: <span class="hljs-string">&#x27;20px&#x27;</span>,
+  <span class="hljs-attr">right</span>: <span class="hljs-string">&#x27;20px&#x27;</span>,
+  <span class="hljs-attr">padding</span>: <span class="hljs-string">&#x27;10px 15px&#x27;</span>,
+  <span class="hljs-attr">fontSize</span>: <span class="hljs-string">&#x27;14px&#x27;</span>,
+  <span class="hljs-attr">backgroundColor</span>: <span class="hljs-string">&#x27;#28a745&#x27;</span>,
+  <span class="hljs-attr">color</span>: <span class="hljs-string">&#x27;#fff&#x27;</span>,
+  <span class="hljs-attr">border</span>: <span class="hljs-string">&#x27;none&#x27;</span>,
+  <span class="hljs-attr">borderRadius</span>: <span class="hljs-string">&#x27;5px&#x27;</span>,
+  <span class="hljs-attr">cursor</span>: <span class="hljs-string">&#x27;pointer&#x27;</span>,
+  <span class="hljs-attr">zIndex</span>: <span class="hljs-number">1000</span>,
+};
+</code></pre>
+<h3 id="additional-tips">Additional Tips:</h3>
+<ul>
+<li><strong>z-index:</strong> Use the <code>z-index</code> property to ensure the button stays on top of other page elements.</li>
+<li><strong>Responsiveness:</strong> Make sure the button remains accessible on different screen sizes. You may need to adjust its position or size based on the viewport.</li>
+<li><strong>Visibility:</strong> You can add logic to show or hide the button based on the scroll position or other conditions using React's state or other hooks.</li>
+</ul>
+<p>This approach ensures that the button is always accessible without obstructing other content on the page.</p>
+
+            
+            
+        </body>
+        </html>
